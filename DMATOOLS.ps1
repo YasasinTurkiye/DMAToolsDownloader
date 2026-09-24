@@ -38,12 +38,7 @@ $Bold        = "${e}[1m"
 # ── Tool groups ───────────────────────────────────────────────────────────────
 $Groups = [ordered]@{
     'DMA Forensics' = @(
-        'https://raw.githubusercontent.com/YasasinTurkiye/1./main/Aim%20Device%20Scanner.exe'
-        'https://raw.githubusercontent.com/YasasinTurkiye/1./main/DMA-multitool.exe'
-        'https://raw.githubusercontent.com/YasasinTurkiye/1./main/Hash%26History%20Scanner.exe'
-        'https://raw.githubusercontent.com/YasasinTurkiye/1./main/RAM%20DUMP%20Analyzer.exe'
-        'https://raw.githubusercontent.com/YasasinTurkiye/1./main/Setup.Api.Dev%20Analyzer.exe'
-        'https://raw.githubusercontent.com/YasasinTurkiye/1./main/TLP%20Contactor.exe'
+        'https://github.com/YasasinTurkiye/1./archive/refs/tags/DMATOOLS.zip'
     )
 }
 
