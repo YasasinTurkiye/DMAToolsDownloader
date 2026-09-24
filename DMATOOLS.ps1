@@ -5,12 +5,9 @@ param()
 # Administrator check
 # ─────────────────────────────────────────────────────────────────────────────
 
-if (-not (
-    [Security.Principal.WindowsPrincipal]
-    [Security.Principal.WindowsIdentity]::GetCurrent()
-).IsInRole(
-    [Security.Principal.WindowsBuiltInRole]::Administrator
-)) {
+$currentPrincipal = [Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()
+
+if (-not $currentPrincipal.IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
     Write-Host "This script requires Administrator privileges." -ForegroundColor Red
     Write-Host "Please re-run from an elevated PowerShell session." -ForegroundColor Yellow
     exit 1
@@ -205,9 +202,7 @@ function Invoke-FileDownload {
             [System.IO.FileOptions]::SequentialScan
         )
 
-        $netStream = $response.Content.ReadAsStreamAsync().
-            GetAwaiter().
-            GetResult()
+        $netStream = $response.Content.ReadAsStreamAsync().GetAwaiter().GetResult()
 
         $netStream.CopyTo($fileStream, $BufferSize)
 
