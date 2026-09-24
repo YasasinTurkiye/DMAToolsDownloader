@@ -38,12 +38,12 @@ $Bold        = "${e}[1m"
 # ── Tool groups ───────────────────────────────────────────────────────────────
 $Groups = [ordered]@{
     'DMA Forensics' = @(
-        'https://github.com/YasasinTurkiye/WeLoveDMABypasses/releases/download/DMATOOLS/Aim.Device.Scanner.exe'
-        'https://github.com/YasasinTurkiye/WeLoveDMABypasses/releases/download/DMATOOLS/TLP.Contactor.exe'
-        'https://github.com/YasasinTurkiye/WeLoveDMABypasses/releases/download/DMATOOLS/DMA-multitool.exe'
-        'https://github.com/YasasinTurkiye/WeLoveDMABypasses/releases/download/DMATOOLS/Hash.History.Scanner.exe'
-        'https://github.com/YasasinTurkiye/WeLoveDMABypasses/releases/download/DMATOOLS/Setup.Api.Dev.Analyzer.exe'
-        'https://github.com/YasasinTurkiye/WeLoveDMABypasses/releases/download/DMATOOLS/RAM.DUMP.Analyzer.exe'
+        'https://github.com/YasasinTurkiye/WeLoveDMABypasses/raw/refs/heads/main/Aim Device Scanner.exe'
+        'https://github.com/YasasinTurkiye/WeLoveDMABypasses/raw/refs/heads/main/DMA-multitool.exe'
+        'https://github.com/YasasinTurkiye/WeLoveDMABypasses/raw/refs/heads/main/Hash&History Scanner.exe'
+        'https://github.com/YasasinTurkiye/WeLoveDMABypasses/raw/refs/heads/main/RAM DUMP Analyzer.exe'
+        'https://github.com/YasasinTurkiye/WeLoveDMABypasses/raw/refs/heads/main/Setup.Api.Dev Analyzer.exe'
+        'https://github.com/YasasinTurkiye/WeLoveDMABypasses/raw/refs/heads/main/TLP Contactor.exe'
     )
   }
 
